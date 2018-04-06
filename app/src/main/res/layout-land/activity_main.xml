@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.datatoolapp.MainActivity">
+    android:layout_height="match_parent">
 
     <ImageButton
         android:id="@+id/financeImgBtn"
@@ -13,8 +13,8 @@
         android:layout_above="@+id/performanceImgBtn"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="FinanceToolImg"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,10 +28,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/financeImgBtn"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="60dp"
         android:contentDescription="DemographicToolImg"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="@+id/mapImgBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toEndOf="@+id/financeImgBtn"
         app:layout_constraintTop_toTopOf="@+id/financeImgBtn"
         app:srcCompat="@drawable/demo" />
@@ -39,14 +39,17 @@
     <ImageButton
         android:id="@+id/performanceImgBtn"
         android:layout_width="92dp"
-        android:layout_height="92sp"
+        android:layout_height="92dp"
         android:layout_alignLeft="@+id/financeImgBtn"
         android:layout_alignStart="@+id/financeImgBtn"
         android:layout_centerVertical="true"
-        android:layout_marginTop="48dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="60dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="@+id/financeImgBtn"
-        app:layout_constraintTop_toBottomOf="@+id/financeImgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toEndOf="@+id/demographicImgBtn"
+        app:layout_constraintTop_toTopOf="@+id/demographicImgBtn"
         app:srcCompat="@drawable/performance" />
 
     <ImageButton
@@ -56,39 +59,42 @@
         android:layout_alignLeft="@+id/demographicImgBtn"
         android:layout_alignStart="@+id/demographicImgBtn"
         android:layout_alignTop="@+id/performanceImgBtn"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="MapToolBtn"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="@+id/searchImgBtn"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/performanceImgBtn"
-        app:layout_constraintTop_toTopOf="@+id/performanceImgBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/financeImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/financeImgBtn"
+        app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/map" />
 
     <ImageButton
         android:id="@+id/contactImgBtn"
         android:layout_width="92dp"
         android:layout_height="92dp"
-        android:layout_alignLeft="@+id/performanceImgBtn"
-        android:layout_alignStart="@+id/performanceImgBtn"
-        android:layout_below="@+id/performanceImgBtn"
-        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="@+id/performanceImgBtn"
-        app:layout_constraintTop_toBottomOf="@+id/performanceImgBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/mapImgBtn"
+        app:layout_constraintStart_toEndOf="@+id/mapImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/demographicImgBtn"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/contact" />
 
     <ImageButton
         android:id="@+id/searchImgBtn"
         android:layout_width="92dp"
         android:layout_height="92dp"
-        android:layout_alignLeft="@+id/mapImgBtn"
-        android:layout_alignStart="@+id/mapImgBtn"
-        android:layout_alignTop="@+id/contactImgBtn"
-        android:layout_marginStart="48dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="44dp"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/contactImgBtn"
         app:layout_constraintStart_toEndOf="@+id/contactImgBtn"
-        app:layout_constraintTop_toTopOf="@+id/contactImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/performanceImgBtn"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/search" />
+
 </android.support.constraint.ConstraintLayout>
