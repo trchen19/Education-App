@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
         ImageButton searchImgBtn = (ImageButton)findViewById(R.id.searchImgBtn);
 
         financeImgBtn.setBackgroundColor(Color.TRANSPARENT);
+        demographicImgBtn.setBackgroundColor(Color.TRANSPARENT);
+        performanceImgBtn.setBackgroundColor(Color.TRANSPARENT);
+        mapImgBtn.setBackgroundColor(Color.TRANSPARENT);
+        contactImgBtn.setBackgroundColor(Color.TRANSPARENT);
+        searchImgBtn.setBackgroundColor(Color.TRANSPARENT);
     }
     private Drawable resize(Drawable image) {
         Bitmap b = ((BitmapDrawable)image).getBitmap();
