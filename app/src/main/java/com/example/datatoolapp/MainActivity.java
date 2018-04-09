@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ScaleDrawable;
+import android.net.Uri;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -48,9 +49,86 @@ public class MainActivity extends AppCompatActivity {
         financeImgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String dataToolURL = "http://www.nyeducationdata.org/fin-tools-and-visualizations";
+                Uri webaddress = Uri.parse(dataToolURL);
+
+                Intent gotoHome =new Intent(Intent.ACTION_VIEW, webaddress);
+                if (gotoHome.resolveActivity(getPackageManager()) != null) {
+                    startActivity(gotoHome);
+                }
                 //each button produces a number, then depending on number produce intent with hasExtra info
                 //to modify DataDisplay
                 return;
+            }
+        });
+
+        demographicImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dataToolURL = "http://www.nyeducationdata.org/demo-tools-and-visualizations";
+                Uri webaddress = Uri.parse(dataToolURL);
+
+                Intent gotoHome =new Intent(Intent.ACTION_VIEW, webaddress);
+                if (gotoHome.resolveActivity(getPackageManager()) != null) {
+                    startActivity(gotoHome);
+                }
+
+            }
+        });
+
+        performanceImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dataToolURL = "http://www.nyeducationdata.org/perf-tools-and-visualizations";
+                Uri webaddress = Uri.parse(dataToolURL);
+
+                Intent gotoHome =new Intent(Intent.ACTION_VIEW, webaddress);
+                if (gotoHome.resolveActivity(getPackageManager()) != null) {
+                    startActivity(gotoHome);
+                }
+
+            }
+        });
+
+        mapImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dataToolURL = "http://www.nyeducationdata.org/geo-tools-and-visualizations";
+                Uri webaddress = Uri.parse(dataToolURL);
+
+                Intent gotoHome =new Intent(Intent.ACTION_VIEW, webaddress);
+                if (gotoHome.resolveActivity(getPackageManager()) != null) {
+                    startActivity(gotoHome);
+                }
+
+            }
+        });
+
+        contactImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dataToolURL = "http://www.nyeducationdata.org/";
+                Uri webaddress = Uri.parse(dataToolURL);
+
+                Intent gotoHome =new Intent(Intent.ACTION_VIEW, webaddress);
+                if (gotoHome.resolveActivity(getPackageManager()) != null) {
+                    startActivity(gotoHome);
+                }
+
+            }
+        });
+
+        searchImgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dataToolURL = "http://www.nyeducationdata.org/";
+                Uri webaddress = Uri.parse(dataToolURL);
+
+                Intent gotoHome =new Intent(Intent.ACTION_VIEW, webaddress);
+                if (gotoHome.resolveActivity(getPackageManager()) != null) {
+                    startActivity(gotoHome);
+                }
+
             }
         });
     }
