@@ -2,4 +2,13 @@
     <string name="app_name">DataToolApp</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="finance">Finance</string>
+    <string name="demographic">Deomgraphic</string>
+    <string name="map">Map</string>
+    <string name="performance">Performance</string>
+    <string name="contact">Contact</string>
+    <string name="search">Search</string>
+    <string name="logout">Logout</string>
+
+
 </resources>
